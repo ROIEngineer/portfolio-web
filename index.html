@@ -1,60 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Portfolio Website</title>
-	<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Harold Durant • Software Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Global Styles  -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Meta Tags -->
+  <meta name="description" content="Harold Durant’s software engineering portfolio showcasing AI, full‑stack, and UX projects.">
+  <meta property="og:title" content="Harold Durant • Software Engineer">
+  <meta property="og:description" content="Explore AI experiments, production apps, and more.">
+  <meta property="og:image" content="/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
+  <!-- Skip Link for Accessibility  -->
+  <a href="#main-content" class="skip-link">Skip to content</a>
 
-	<h1>Welcome!</h1>
-
-	<p>Hi, my name is Harold Durant. I'm an aspiring software engineer. What started as a brief exploration into creating an AI assistant became a catalyst for my tech journey. Now, as an aspiring software engineer, I’m dedicated to harnessing technology's potential to unlock new career opportunities and solve real-world problems. I’m diving into diverse areas—from speech recognition to user-focused design—and I invite you to join me on this exciting path toward innovation.</p>
-	<p><strong>Explore my portfolio</strong> and see how I’m turning curiosity into real-world solutions.</p>
-
-
-        <h2>Full Stack Portfolio Website - Developer Portfolio (This Website)</h2>
-	<img src="./images/full-stack-portfolio-website-logo.png" alt="This a image of the Pantry Pal logo." height="192" width="192"/>
-        <p>A performant, SEO-optimized portfolio built with <strong>Next.js 14</strong> and <strong>Tailwind CSS</strong>, featuring server-side rendering, dynamic project filtering, and a contact form with analytics.</p>
-        <h3>Key Features:</h3>
+  <!-- HEADER -->
+  <header role="banner">
+    <div class="header-container">
+      <div class="logo">Harold Durant</div>
+      <nav aria-label="Main site navigation">
         <ul>
-                <li>Achieved 98 Lighthouse performance score via code-splitting and image optimization.</li>
-                <li>Integrated blog with MDX for technical write-ups (e.g., "How I Scaled Pantry Pal’s API").</li>
-                <li>Automated CI/CD with Vercel and GitHub Actions.
-		    Tech Stack: Next.js, React, TypeScript, Tailwind CSS, Vercel.
-		    Demonstrates: Full-stack development, performance optimization, modern CI/CD practices.</li>
-		<li>Repo: [Link] | Learn More: [<a href="./pages/full-stack-portfolio-website.html" target="_blank" rel="noopener noreferrer">Link</a>]</li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
         </ul>
+      </nav>
+    </div>
+  </header>
 
-		
-	<h2>Pantry Pal - AI Powered Recipe Generator</h2>
-	<img src="./images/pantrypal-logo.png" alt="This a image of the Pantry Pal logo." height="192" width="192"/>
-	<p>A React Native app that reduces food waste by recommending recipes based on pantry ingredients, leveraging TensorFlow Lite for on-device ML and the Spoonacular API.</p>
-	<h3>Key Features:</h3>
-	<ul>
-		<li>85% recommendation accuracy via collaborative filtering.</li>
-		<li>Barcode scanning (Google ML Kit) + real-time sync with Firebase Firestore.</li>
-		<li>Reduced API latency by 40% using Redis caching.
-		    Tech Stack: React Native, Python (Flask), TensorFlow Lite, Firebase, Redis.
-		    Demonstrates: Mobile development, ML integration, API optimization.</li>
-		<li>Repo: [Link] | Learn More: [<a href="./pantry-pal-app.html" target="_blank" rel="noopener noreferrer">Link</a>]</li>
-	</ul>
+  <!-- MAIN CONTENT -->
+  <main id="main-content" role="main">
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>My Journey!</h1>
+          <p>What started as a weekend experiment building an AI assistant turned into a full-blown passion for software engineering. Today, I’m on a mission to harness technology— from speech recognition to user-centered design— to solve real-world problems and open new career doors. I’d love for you to explore my projects and join me on this path toward innovation.</p>
+        </div>
+        <div class="hero-image-container">
+          <img src="images/homepage-selfie.jpg" alt="Photo of Harold Durant" class="hero-image" loading="lazy">
+        </div>
+      </div>
+    </section>
 
-        <h2><a href="./projects/fair-share-app.html" target="_blank" rel="noopener noreferrer">FairShare Ride App - Driver Centric Ride-Hailing PLatform</a></h2>
-        <img src="./images/fairshare-logo.png" alt="This a image of the FairShare Ride App logo." height="192" width="192"/>
-        <p>A Node.js/Express ride-sharing app with a transparent pricing algorithm that prioritizes driver earnings, featuring real-time tracking and Mapbox integration.</p>
-        <h3>Key Features:</h3>
-        <ul>
-                <li>Dynamic pricing model increased driver earnings by 30% in simulations.</li>
-                <li>WebSocket-powered live tracking with 500ms updates.</li>
-                <li>Secured payments via Stripe Connect with fraud detection.
-		    Tech Stack: Node.js, Socket.io, PostgreSQL, Mapbox, Stripe.
-		    Demonstrates: Real-time systems, payment integration, scalable backend design.</li>
-		<li>Repo: [Link] | Live Demo: [Link]</li>
-        </ul>
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+      <div class="skills-container">
+        <h2>Technologies I Work With</h2>
+        <div class="tech-stack">
+          <div class="tech-item">
+            <div class="tech-icon">⚛️</div>
+            <div class="tech-name">React</div>
+          </div>
+          <div class="tech-item">
+            <div class="tech-icon">P</div>
+            <div class="tech-name">Python</div>
+          </div>
+          <!-- Add more items -->
+        </div>
+      </div>
+    </section>
 
+    <!-- PORTFOLIO WEBSITE -->
+    <section class="portfolio-web">
+      <div class="portfolio-container">
+        <div class="portfolio-image-container">
+          <img src="images/portfolio-website-logo.png" alt="Photo of the portfolio website" class="portfolio-image" loading="lazy">
+        </div>
+        <div class="portfolio-text">
+          <h2>Portfolio Website</h2>
+          <p>My portfolio is built for speed and clarity, letting recruiters filter and explore my AI, full-stack, and UX projects instantly via live demos and write-ups. It highlights my production-ready skills and makes it easy to see what I can build and how we might collaborate.</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </section>
 
+    <!-- PANTRY PAL -->
+    <section class="pantry-pal">
+      <div class="pantry-container">
+        <div class="pantry-text">
+          <h2>Pantry Pal</h2>
+          <p>Pantry Pal turns your pantry into a smart kitchen assistant, recommending recipes based on what you already have with 85% on-device AI accuracy. By scanning barcodes and syncing in real time, it keeps your inventory current, cuts food waste, and saves you money.</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+        <div class="pantry-image-container">
+          <img src="images/pantrypal-logo.png" alt="Logo of Pantry Pal App" class="pantry-image" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAIRSHARE -->
+    <section class="fairshare">
+      <div class="fairshare-container">
+        <div class="fairshare-image-container">
+          <img src="" alt="Photo of the Fairshare App Logo" class="fairshare-image" loading="lazy">
+        </div>
+        <div class="fairshare-text">
+          <h2>Fairshare</h2>
+          <p>FairShare Ride is a driver-first ride-hailing platform that boosts earnings by 30% through transparent pricing, offers sub-second real-time tracking for smoother pickups, and secures payouts to protect drivers—empowering them to maximize income and deliver reliable service.</p>
+          <a href="#" class="learn-more">Learn More</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!--  FOOTER  -->
+  <footer role="contentinfo">
+    <p>© 2025 Harold Durant. All rights reserved.</p>
+  </footer>
 </body>
 </html>
