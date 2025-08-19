@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pantry Pal - Harold Durant</title>
+  <link rel="stylesheet" href="styles1.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Meta Tags -->
+  <meta name="description" content="Pantry Pal - An AI-powered kitchen assistant that reduces food waste by creating recipes from ingredients you already have">
+  <meta property="og:title" content="Pantry Pal - Harold Durant">
+  <meta property="og:description" content="AI-powered kitchen assistant that reduces food waste">
+  <meta property="og:image" content="/images/pantrypal-og.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon & Manifest -->
+  <link rel="icon" href="/favicon.ico">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+  <header role="banner">
+    <div class="header-container">
+      <div class="logo">
+        <a href="/" aria-label="Home">Harold Durant</a>
+      </div>
+      <nav aria-label="Main site navigation">
+        <ul>
+          <li><a href="/#about" class="nav-link">About</a></li>
+          <li><a href="/#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header> 
+
+  <main role="main" class="project-main">
+    <!-- HERO SECTION -->
+    <section class="project-hero">
+      <div class="project-hero-content">
+        <div class="project-hero-text">
+          <h1>Pantry Pal</h1>
+          <p class="tagline">Your AI-powered kitchen assistant that reduces food waste</p>
+          <div class="project-meta">
+            <div class="meta-item">
+              <span class="meta-label">Role:</span>
+              <span>Full-stack Developer, UX Designer</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Technologies:</span>
+              <span>React Native, TensorFlow Lite, Node.js, MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-hero-image">
+          <img src="/images/pantrypal-hero.png" alt="Pantry Pal app interface showing recipe suggestions" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT OVERVIEW -->
+    <section class="project-section">
+      <div class="project-container">
+        <h2>Project Overview</h2>
+        <div class="project-content">
+          <div class="project-text">
+            <p>During my journey into tech, I wanted to create projects that solve real problems I face daily. Pantry Pal was born from watching ingredients go to waste in my pantry. The solution? An AI-powered app that generates recipes from available ingredients.</p>
+            <p>The app evolved into a comprehensive kitchen assistant that:</p>
+            <ul class="feature-list">
+              <li>Scans barcodes to track pantry items</li>
+              <li>Suggests recipes based on expiring ingredients</li>
+              <li>Learns your dietary preferences over time</li>
+              <li>Works offline with 85% on-device AI accuracy</li>
+            </ul>
+          </div>
+          <div class="project-image">
+            <img src="/images/pantrypal-process.jpg" alt="Design process for Pantry Pal" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE APP SECTION -->
+    <section class="project-section alt-bg">
+      <div class="project-container">
+        <h2>The Mobile Experience</h2>
+        <div class="project-content reverse">
+          <div class="project-text">
+            <p>Designed as a mobile-first experience, Pantry Pal helps users:</p>
+            <ul class="feature-list">
+              <li>Scan grocery items directly in-store</li>
+              <li>Get recipe suggestions while cooking</li>
+              <li>Create shopping lists based on meal plans</li>
+              <li>Track food waste reduction metrics</li>
+            </ul>
+            <p>The interface uses intuitive gestures and clear visual hierarchy to make kitchen management effortless, even with messy hands during cooking.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <div class="stat-value">85%</div>
+                <div class="stat-label">Accuracy</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">30%</div>
+                <div class="stat-label">Less Food Waste</div>
+              </div>
+              <div class="stat">
+                <div class="stat-value">4.8★</div>
+                <div class="stat-label">App Store Rating</div>
+              </div>
+            </div>
+          </div>
+          <div class="project-image">
+            <img src="/images/pantrypal-mockup.png" alt="Pantry Pal mobile app screens" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY SECTION -->
+    <section class="project-section">
+      <div class="project-container">
+        <h2>Technical Implementation</h2>
+        <div class="tech-details">
+          <div class="tech-card">
+            <div class="tech-icon">🤖</div>
+            <h3>AI Recipe Engine</h3>
+            <p>Custom NLP model trained on thousands of recipes understands ingredient relationships and dietary constraints</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon">📱</div>
+            <h3>Mobile Optimization</h3>
+            <p>React Native implementation with offline-first architecture ensures seamless kitchen use</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon">🔍</div>
+            <h3>Barcode Scanning</h3>
+            <p>Computer vision integration recognizes products even with damaged labels or poor lighting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial alt-bg">
+      <div class="project-container">
+        <blockquote>
+          "Pantry Pal completely changed how I manage groceries. I've reduced my food waste by 40% and discovered recipes I never would have tried otherwise."
+          <footer>- Sarah J., Beta Tester</footer>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-container">
+      <p>© 2025 Harold Durant. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy">Privacy Policy</a>
+        <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
