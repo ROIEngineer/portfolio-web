@@ -90,3 +90,17 @@ nav a {
   font-size: 1.1em;
 }
 
+/* FOOTER */
+footer {
+  background-color: var(--dark-bg);
+  padding: 10px 0;
+}
+
+.footer-container {
+  padding: 0 0 0 20px ;
+}
+
+footer p {
+  color: white;
+  font-size: 12px;
+}
