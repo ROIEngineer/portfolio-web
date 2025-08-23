@@ -1,0 +1,102 @@
+/* VARIABLES */
+:root {
+  --dark-bg: #1F2937;
+  --hero-main: #F9FAF8;
+  --hero-secondary: #E5E7EB;
+  --button-color: #3882F6;
+}
+
+/* RESET */
+*,*::before,*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Montserrat'; 
+  display: flex; 
+  flex-direction: column; 
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 100px;
+}
+
+/* INFO SECTION */
+.info {
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: white;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+}
+
+.info h1 {
+  margin-bottom: 10px;
+}
+
+.info p {
+  padding: 10px;
+}
+
+/* FORM SECTION */
+form {
+  display: inline-block;
+  /* Form outline */
+  padding: 1em;
+  margin-top: 10px;
+  border: 1px solid #cccccc;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  min-width: 80px;
+  text-align: left;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, text areas have a monospace font */
+  font: 1em 'Montserrat';
+  width: 200px;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+}
+
+input:focus,
+textarea:focus {
+  /* set the outline width and style */
+  outline-style: solid;
+  /* to give a little highlight on active elements */
+  outline-color: black;
+}
+
+textarea {
+  vertical-align: center;
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 0.5em;
+}
