@@ -22,6 +22,7 @@ body {
   background-color: #1F2937;
 }
 
+
 /* HEADER SECTION */
 header {
   background-color: var(--dark-bg);
@@ -104,3 +105,4 @@ footer p {
   color: white;
   font-size: 12px;
 }
+
