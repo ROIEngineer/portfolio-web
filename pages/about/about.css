@@ -82,8 +82,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  outline: 2px solid var(--button-color); /* highlights border when selected */
-  outline-offset: -2px;
+  outline: 2px solid var(--button-color); /* A property that draws a line outside the element's border. */
+  outline-offset: -2px; /*  This property controls the space between the element's border and its outline. */
 }
 
 textarea {
@@ -104,7 +104,7 @@ button {
   border-radius: 4px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s; /* When the button's background color changes (e.g., on hover), it will fade to the new color over 0.3 seconds instead of changing instantly. */
 }
 
 button:hover {
