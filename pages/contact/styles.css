@@ -26,7 +26,7 @@ body {
 
 /* HEADER SECTION */
 header {
-  background-color: var(--dark-bg);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 32px 0; 
 }
 
