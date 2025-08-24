@@ -84,7 +84,8 @@ nav a {
   background: white;
   color: #333;
   text-align: center;
-  width: 500px;
+  flex: 1;
+  max-width: 500px;
 }
 
 .info h1 {
