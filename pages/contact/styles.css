@@ -157,3 +157,34 @@ button:hover {
   background-color: #2a6fd3;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+      
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info {
+  padding: 1.5rem;
+  }
+      
+  .info h1 {
+    font-size: 1.5rem;
+  }
+      
+  .button {
+    justify-content: center;
+  }
+      
+  button {
+    width: 100%;
+  }
+}
