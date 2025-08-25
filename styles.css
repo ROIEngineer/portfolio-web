@@ -62,7 +62,7 @@ nav a {
 }
 
 .nav-link:hover, .nav-link:focus {
-  color: teal; /* this was var(--accent) */
+  color: teal;
   outline: none;
 }
 
@@ -84,8 +84,8 @@ nav a {
 /* HERO TEXT */
 .hero h1 { 
   font-size: 48px; 
-  color: var(--hero-main); /* Couldn't I just add this to the hero text class? */
-  line-height: 1.08; /* What does this do? and why is this not on the hero-text */
+  color: var(--hero-main); 
+  line-height: 1.08; 
   margin-bottom: 10px;
 }
 
@@ -121,7 +121,7 @@ nav a {
 /* TECH GRID */
 .tech-stack {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Break this line down */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
   gap:30px;
   max-width: 800px;
   margin: 0 auto;
@@ -131,16 +131,16 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: white; /* Is this neccessary? */
+  background: white; 
   padding: 25px 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Is this being implemented? */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   transition: all 0.3s ease;
   gap: 12px;
 }
 
 .tech-item:hover {
-  transform: translateY(-5px); /* Creates the 'lifting up' effect */
+  transform: translateY(-5px); 
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
   will-change: transform;
 }
@@ -262,12 +262,15 @@ nav a {
     min-height: 200px;
     width: 100%;
     margin-bottom: 30px;
-    order: 1; /* Ensures images come first */
+    order: 1; 
   }
+  
+  /* Hero text Mobile */
+  .hero h1 { font-size: 28px; }
+  .hero p { font-size: 16px; }
 
-  /* Add matching order for text containers */
   .section-text {
-    order: 2; /* Ensures text comes after images */
+    order: 2; 
   }
 
   .skills h2 {
