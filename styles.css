@@ -227,6 +227,12 @@ nav a {
 
 .learn-more:hover { opacity: 0.9; }
 
+/* Add visible focus styles for keyboard users */
+a:focus, button:focus, .learn-more:focus {
+  outline: 3px solid rgba(56,130,246,0.3);
+  outline-offset: 2px;
+}
+
 /* FOOTER */
 .site-footer.columns { padding: 40px 16px; background: var(--dark-bg); color: white; }
 .footer-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns: 1fr 160px 160px; gap:28px; align-items:start; }
