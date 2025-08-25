@@ -35,7 +35,7 @@
       <nav aria-label="Main site navigation">
         <ul>
           <li><a href="pages/projects/index.html" class="nav-link">Projects</a></li>
-          <li><a href="https://github.com/ROIEngineer" rel="noopener noreferrer" target="_blank" class="nav-link">GitHub</a></li>
+          <li><a href="https://github.com/ROIEngineer" class="nav-link" rel="noopener">GitHub</a></li>
           <li><a href="pages/contact/index.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
@@ -50,7 +50,10 @@
         <div class="section-text">
           <h1>My Journey!</h1>
           <p>What started as a weekend experiment building an AI assistant turned into a full-blown passion for software engineering. Today, I’m on a mission to harness technology— from speech recognition to user-centered design— to solve real-world problems and open new career doors. I’d love for you to explore my projects and join me on this path toward innovation.</p>
+          <a href="pages/projects/index.html" class="learn-more">See Projects</a>
+          <a class="learn-more" href="/resume.pdf">Download Resume</a>
         </div>
+        
         <div class="section-image-container">
           <img src="images/homepage-selfie.jpg" alt="Photo of Harold Durant" class="section-image" loading="lazy">
         </div>
@@ -119,10 +122,36 @@
   </main>
 
   <!--  FOOTER  -->
-  <footer role="contentinfo">
-    <div class="footer-container">
-      <p>© 2025 Harold Durant All rights reserved.</p>
+  <footer class="site-footer columns" role="contentinfo" aria-label="Site footer">
+    <div class="container footer-grid">
+      <div class="col brand">
+        <div class="logo">Harold Durant</div>
+        <p class="muted">Building AI-powered applications, full-stack solutions, and UX-focused experiences.</p>
+      </div>
+
+      <div class="col">
+        <h4>Projects</h4>
+        <ul>
+          <li><a href="pages/portfolio-web/index.html">Portfolio Website</a></li>
+          <li><a href="pages/pantry-pal/index.html">Pantry Pal</a></li>
+          <li><a href="pages/fairshare/index.html">Fairshare</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="mailto:mrdurant2023@gmail.com">Email</a></li>
+          <li><a href="pages/contact/index.html">Contact</a></li>
+          <li><a href="https://github.com/ROIEngineer" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>&copy; <span id="year"></span> Harold Durant — Built with care.</small>
     </div>
   </footer>
+
 </body>
 </html>
