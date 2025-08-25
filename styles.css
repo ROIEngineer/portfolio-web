@@ -85,7 +85,7 @@ nav a {
 .hero h1 { 
   font-size: 48px; 
   color: var(--hero-main); /* Couldn't I just add this to the hero text class? */
-  line-height: 1.1; /* What does this do? and why is this not on the hero-text */
+  line-height: 1.08; /* What does this do? and why is this not on the hero-text */
   margin-bottom: 10px;
 }
 
@@ -247,6 +247,12 @@ nav a {
   .section-container {
     flex-direction: column;
   }
+}
+
+/* Hero text Mobile */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 28px; }
+  .hero p { font-size: 16px; }
 }
 
 /* Adjust image containers */
