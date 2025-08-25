@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid red;
 }
 
 /* BODY */
@@ -91,6 +92,11 @@ nav a {
   color: var(--hero-secondary);
   margin-bottom: 20px;
 }
+
+.hero a,
+.learn-more {
+  margin-left: 3px;
+} 
 
 /* SKILLS SECTION */
 .skills {
