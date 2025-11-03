@@ -1,0 +1,128 @@
+/* VARIABLES */
+:root {
+  --dark-bg: #1F2937;
+  --hero-main: #F9FAF8;
+  --hero-secondary: #E5E7EB;
+  --button-color: #3882F6;
+}
+
+/* RESET */ 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Montserrat'; 
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
+  line-height: 1.6;
+}
+
+/* HEADER SECTION */
+header {
+  background-color: var(--dark-bg);
+  padding: 32px 0; 
+  position: sticky; 
+  top: 0;
+}
+
+.header-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px; 
+}
+
+.logo {
+  color: var(--hero-main);
+  font-size: 16px;
+}
+
+/* HEADER LINKS */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--hero-secondary);
+}
+
+.nav-link {
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: teal;
+  outline: none;
+}
+
+
+/* FOOTER */
+.site-footer.columns { padding: 40px 16px; background: var(--dark-bg); color: white; }
+.footer-grid { max-width:1100px; margin:0 auto; display:grid; grid-template-columns: 1fr 160px 160px; gap:28px; align-items:start; }
+.site-footer h4 { margin-bottom:8px; font-size:0.95rem;}
+.site-footer ul { list-style:none; margin:0; padding:0; }
+.site-footer li { margin-bottom:8px; }
+.site-footer a { color:inherit; text-decoration:none; }
+.footer-bottom { text-align:center; margin-top:20px; color:#94a3b8; font-size:0.85rem; }
+
+/* Responsive */
+@media (max-width:720px){
+  .footer-grid { grid-template-columns: 1fr; }
+  .site-footer.columns { padding: 28px 16px; }
+}
+
+/* MOBILE ADJUSTMENTS */
+@media (max-width: 768px) {
+  .section-container {
+    flex-direction: column;
+  }
+}
+
+/* Hero text Mobile */
+@media (max-width: 640px) {
+  .hero h1 { font-size: 28px; }
+  .hero p { font-size: 16px; }
+}
+
+/* Adjust image containers */
+@media (max-width: 640px) {
+  .section-image-container {
+    max-height: 300px;
+    min-height: 200px;
+    width: 100%;
+    margin-bottom: 30px;
+    order: 1; 
+  }
+  
+  /* Hero text Mobile */
+  .hero h1 { font-size: 28px; }
+  .hero p { font-size: 16px; }
+
+  .section-text {
+    order: 2; 
+  }
+
+  .skills h2 {
+    font-size: 28px;
+  }
+  
+  .tech-stack {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+  
+  .tech-item {
+    padding: 20px 15px;
+  }
+
