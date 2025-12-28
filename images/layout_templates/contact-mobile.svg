@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="812" viewBox="0 0 375 812" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"></rect>
+  <!-- header -->
+  <rect x="14" y="18" width="110" height="34" rx="6" fill="none" stroke="#ccc"></rect>
+  <text x="28" y="40" font-size="12" fill="#333">Logo</text>
+
+  <text x="20" y="88" font-size="20" font-weight="700" fill="#111">Contact</text>
+  <text x="20" y="112" font-size="12" fill="#444">Form → Formspree or serverless. Mailto fallback + socials.</text>
+
+  <!-- form fields stacked -->
+  <rect x="16" y="140" width="343" height="44" rx="6" fill="none" stroke="#ddd"></rect>
+  <text x="28" y="168" font-size="12" fill="#666">Name</text>
+
+  <rect x="16" y="200" width="343" height="44" rx="6" fill="none" stroke="#ddd"></rect>
+  <text x="28" y="228" font-size="12" fill="#666">Email</text>
+
+  <rect x="16" y="260" width="343" height="160" rx="6" fill="none" stroke="#ddd"></rect>
+  <text x="28" y="288" font-size="12" fill="#666">Message</text>
+
+  <rect x="16" y="432" width="343" height="44" rx="6" fill="none" stroke="#333"></rect>
+  <text x="150" y="462" font-size="14" fill="#333">Send message</text>
+
+  <text x="16" y="492" font-size="12" fill="#444">Or: mailto: you@domain.com</text>
+  <text x="16" y="512" font-size="12" fill="#444">Socials: GitHub • LinkedIn</text>
+
+  <!-- footer -->
+  <rect x="0" y="760" width="375" height="52" fill="none" stroke="#eee"></rect>
+  <text x="20" y="790" font-size="12" fill="#666">© 2025 — Your Name</text>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" font-family="Segoe UI, Roboto, Arial, sans-serif">
+  <rect width="100%" height="100%" fill="#fff"></rect>
+  <!-- top nav -->
+  <rect x="40" y="24" width="140" height="36" rx="6" fill="none" stroke="#ccc"></rect>
+  <text x="60" y="48" font-size="14" fill="#333">Logo</text>
+  <text x="920" y="48" font-size="14" fill="#333">About</text>
+  <text x="985" y="48" font-size="14" fill="#333">Projects</text>
+  <text x="1060" y="48" font-size="14" fill="#333">Resume</text>
+  <text x="1130" y="48" font-size="14" fill="#333">Contact</text>
+
+  <!-- optional filter/tags row -->
+  <rect x="40" y="80" width="1120" height="44" rx="6" fill="none" stroke="#eee"></rect>
+  <text x="60" y="108" font-size="13" fill="#666">Filter: All • Web • ML • Tools • Mobile</text>
+
+  <!-- grid: 3 cards / responsive -->
+  <!-- card 1 -->
+  <rect x="60" y="150" width="510" height="260" rx="8" fill="none" stroke="#e6e6e6"></rect>
+  <rect x="70" y="160" width="380" height="160" rx="6" fill="none" stroke="#ddd"></rect>
+  <text x="70" y="340" font-size="16" fill="#222">Project Title 1</text>
+  <text x="70" y="365" font-size="13" fill="#555">Short description — one or two lines summarizing the project.</text>
+  <!-- badges -->
+  <rect x="70" y="380" width="60" height="22" rx="4" fill="none" stroke="#ddd"></rect><text x="82" y="396" font-size="11" fill="#666">React</text>
+  <rect x="140" y="380" width="60" height="22" rx="4" fill="none" stroke="#ddd"></rect><text x="152" y="396" font-size="11" fill="#666">Node</text>
+  <!-- actions -->
+  <rect x="70" y="410" width="88" height="34" rx="6" fill="none" stroke="#333"></rect><text x="96" y="433" font-size="13" fill="#333">Live</text>
+  <rect x="170" y="410" width="88" height="34" rx="6" fill="none" stroke="#333"></rect><text x="196" y="433" font-size="13" fill="#333">Code</text>
+
+  <!-- card 2 -->
+  <rect x="630" y="150" width="510" height="260" rx="8" fill="none" stroke="#e6e6e6"></rect>
+  <rect x="640" y="160" width="380" height="160" rx="6" fill="none" stroke="#ddd"></rect>
+  <text x="640" y="340" font-size="16" fill="#222">Project Title 2</text>
+  <text x="640" y="365" font-size="13" fill="#555">Short description — one or two lines summarizing the project.</text>
+  <rect x="640" y="410" width="88" height="34" rx="6" fill="none" stroke="#333"></rect><text x="666" y="433" font-size="13" fill="#333">Live</text>
+  <rect x="740" y="410" width="88" height="34" rx="6" fill="none" stroke="#333"></rect><text x="766" y="433" font-size="13" fill="#333">Code</text>
+
+  <!-- card 3 (row 2, left) -->
+  <rect x="60" y="440" width="510" height="260" rx="8" fill="none" stroke="#e6e6e6"></rect>
+  <rect x="70" y="450" width="380" height="160" rx="6" fill="none" stroke="#ddd"></rect>
+  <text x="70" y="630" font-size="16" fill="#222">Project Title 3</text>
+  <text x="70" y="655" font-size="13" fill="#555">Short description — one or two lines summarizing the project.</text>
+  <rect x="70" y="700" width="88" height="34" rx="6" fill="none" stroke="#333"></rect><text x="96" y="723" font-size="13" fill="#333">Live</text>
+  <rect x="170" y="700" width="88" height="34" rx="6" fill="none" stroke="#333"></rect><text x="196" y="723" font-size="13" fill="#333">Code</text>
+
+  <!-- footer -->
+  <rect x="40" y="840" width="1120" height="40" fill="none" stroke="#eee"></rect>
+  <text x="60" y="868" font-size="12" fill="#666">© 2025 — Your Name</text>
+</svg>
