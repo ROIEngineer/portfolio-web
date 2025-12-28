@@ -1,0 +1,11 @@
+/* BODY */
+body {
+  font-family: 'Montserrat', sans-serif, system-ui; 
+  display: flex;
+  flex-direction: column; 
+  min-height: 100dvh;
+  line-height: 1.6;
+}
+
+main { flex: 1; }
+

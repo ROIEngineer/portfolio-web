@@ -1,0 +1,41 @@
+/* HEADER SECTION */
+header {
+  background-color: var(--dark-bg);
+  padding: 32px 0; 
+}
+
+.header-container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px; 
+}
+
+.logo a {
+  color: var(--hero-main);
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* HEADER LINKS */
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--hero-secondary);
+  transition: color 0.2s;
+}
+
+.nav-link:hover, 
+.nav-link:focus {
+  color: teal;
+  outline: none;
+}
+
+
