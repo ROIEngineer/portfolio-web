@@ -45,19 +45,32 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <main id="main-content" role="main" tabindex="-1">
+  <main id="main-content" role="main">
+
     <!-- HERO SECTION -->
     <section class="hero">
+      <!-- HERO TEXT -->
       <div class="hero-container">
         <div class="section-text">
           <h1>My Journey!</h1>
           <p>What started as a weekend experiment building an AI assistant turned into a full-blown passion for software engineering. Today, I’m on a mission to harness technology— from speech recognition to user-centered design— to solve real-world problems and open new career doors. I’d love for you to explore my projects and join me on this path toward innovation.</p>
           <a href="pages/projects/index.html" class="learn-more">See Projects</a>
-          <a class="learn-more" href="/resume.pdf">Download Resume</a>
-        </div>        
-        <div class="section-image-container">
-          <img src="images/homepage-selfie.jpg" alt="Photo of Harold Durant" class="section-image" loading="lazy">
+          <a class="learn-more" href="assets/docs/resume.pdf" taria-label="Download and view resume as PDF" download>Download Resume</a>
         </div>
+
+	<!-- VIDEO CONTAINER -->
+	<div class="video-container">        
+          <video class="intro-video" autoplay muted loop playsinline preload="metadata" poster="images/video-poster.jpg" aria-label="30-second introduction video">
+	    <source src="assets/videos/intro.mp4" type="video/mp4">
+	    <source src="assets/videos/intro.webm" type="video/webm">
+	    <!-- FALLBACK IMAGE IF VIDEO DOESN'T LOAD -->
+	    <img src="" alt="" loading="lazy">
+	  </video>
+	  <button class="video-control" aria-label="Play/pause video">▶️</button>
+	  <div class="video-caption">
+	    <small>Watch my 30-second intro</small>
+	  </div>
+	</div>
       </div>
     </section>
 
@@ -66,15 +79,20 @@
       <div class="skills-container">
         <h2>Technologies I Work With</h2>
         <div class="tech-stack">
+	
+	  <!-- React -->
           <div class="tech-item">
             <div class="tech-icon">⚛️</div>
             <div class="tech-name">React</div>
           </div>
+
+	  <!-- Python -->
           <div class="tech-item">
-            <div class="tech-icon">P</div>
-            <div class="tech-name">Python</div>
-          </div>
-          <!-- Add more items -->
+            <div class="tech-icon">
+	    </div>
+	    <div class="tech-name">Python</div>
+	  </div>
+
         </div>
       </div>
     </section>
