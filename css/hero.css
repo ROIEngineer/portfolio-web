@@ -1,0 +1,72 @@
+#hero {
+  color: var(--text-color);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 4rem 1rem;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+/* TEXT CONTENT */
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+}
+
+.hero-text a {
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  padding: 0.875rem 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--text-color);
+  transition: all 0.3s ease;
+}
+
+/* BUTTONS STYLING */
+.hero-text > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* "HIRE ME" BUTTON */
+.hero-text a:first-child {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.hero-text a:first-child:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+/* "LET'S TALK" BUTTON */
+.hero-text a:last-child {
+  background: transparent;
+  color: #4a5568;
+  border: 2px solid #cbd5e0;
+}
+
+.hero-text a:last-child:hover {
+  background: #f7fafc;
+  border-color: #a0aec0;
+  transform: translateY(-3px);
+}

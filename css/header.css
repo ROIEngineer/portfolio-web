@@ -1,41 +1,53 @@
-/* HEADER SECTION */
+/* HEADER */
 header {
-  background-color: var(--dark-bg);
-  padding: 32px 0; 
+  color: var(--text-color);
+  background: linear-gradient(to right, #f8f9fa, #fff); 
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  font-size: 1.2rem;
 }
 
-.header-container {
-  max-width: 1200px; 
-  margin: 0 auto;
+.header.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 16px; 
+  min-height: 10vh;
 }
 
-.logo a {
-  color: var(--hero-main);
-  font-size: 16px;
-  text-decoration: none;
-}
-
-/* HEADER LINKS */
-nav ul {
+/* NAVIGATION LINKS */
+header nav ul {
   display: flex;
   list-style: none;
-  gap: 25px;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-link {
+header nav a {
   text-decoration: none;
-  color: var(--hero-secondary);
-  transition: color 0.2s;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.nav-link:hover, 
-.nav-link:focus {
-  color: teal;
-  outline: none;
+/* Hover Effect */
+header nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  color: #007bff; 
 }
 
+/* Focus Effect - for keyboard navigation */
+header nav a:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 4px;
+  background-color: rgba(0, 123, 255, 0.1);
+}
 
+/* Active state (when clicked) */
+header nav a:active {
+  transform: translateY(0);
+}
