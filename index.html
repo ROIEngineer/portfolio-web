@@ -30,15 +30,16 @@
 <body>
   <!-- HEADER -->
   <header role="banner">
-    <div class="header-container">
-      <div class="logo">
+    <div class="header container">
+      <!-- LOGO -->
+      <div>
 	<a href="index.html">Harold Durant</a>
       </div>
       <nav aria-label="Main site navigation">
         <ul>
-          <li><a href="./pages/projects/index.html" class="nav-link">Projects</a></li>
-          <li><a href="https://github.com/ROIEngineer" class="nav-link" rel="noopener noreferrer" target="_blank">GitHub</a></li>
-          <li><a href="pages/contact/index.html" class="nav-link">Contact</a></li>
+          <li><a href="/pages/projects/index.html">Projects</a></li>
+          <li><a href="https://github.com/ROIEngineer" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+          <li><a href="pages/contact/index.html">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -48,28 +49,25 @@
   <main id="main-content" role="main">
 
     <!-- HERO SECTION -->
-    <section class="hero">
-      <!-- HERO TEXT -->
-      <div class="hero-container">
-        <div class="section-text">
+    <section id="hero">
+      <div class="hero container">
+	<!-- TEXT CONTENT -->
+        <div class="hero-text">
           <h1>My Journey!</h1>
           <p>What started as a weekend experiment building an AI assistant turned into a full-blown passion for software engineering. Today, I’m on a mission to harness technology— from speech recognition to user-centered design— to solve real-world problems and open new career doors. I’d love for you to explore my projects and join me on this path toward innovation.</p>
-          <a href="pages/projects/index.html" class="learn-more">See Projects</a>
-          <a class="learn-more" href="assets/docs/resume.pdf" taria-label="Download and view resume as PDF" download>Download Resume</a>
+	  <div>
+            <a href="#" target="_blank">Hire Me</a>
+            <a href="#" target="_blank">Let's talk</a>
+	  </div>
         </div>
-
 	<!-- VIDEO CONTAINER -->
 	<div class="video-container">        
-          <video class="intro-video" autoplay muted loop playsinline preload="metadata" poster="images/video-poster.jpg" aria-label="30-second introduction video">
+          <video class="intro-video" controls autoplay muted loop playsinline preload="metadata" poster="images/video-poster.jpg" aria-label="30-second introduction video">
 	    <source src="assets/videos/intro.mp4" type="video/mp4">
 	    <source src="assets/videos/intro.webm" type="video/webm">
 	    <!-- FALLBACK IMAGE IF VIDEO DOESN'T LOAD -->
-	    <img src="" alt="" loading="lazy">
+	    <img src="images/homepage-selfie.png" alt="Photo of Harold Durant" loading="lazy">
 	  </video>
-	  <button class="video-control" aria-label="Play/pause video">▶️</button>
-	  <div class="video-caption">
-	    <small>Watch my 30-second intro</small>
-	  </div>
 	</div>
       </div>
     </section>
@@ -93,6 +91,35 @@
 	    <div class="tech-name">Python</div>
 	  </div>
 
+          <!-- JavaScript -->
+          <div class="tech-item">
+            <div class="tech-icon"></div>
+            <div class="tech-name">JavaScript</div>
+          </div>
+
+          <!-- Node.js -->
+          <div class="tech-item">
+            <div class="tech-icon"></div>
+            <div class="tech-name">Node.js</div>
+          </div>
+
+          <!-- HTML5 -->
+          <div class="tech-item">
+            <div class="tech-icon"></div>
+            <div class="tech-name">HTML5</div>
+          </div>
+
+          <!-- CSS3 -->
+          <div class="tech-item">
+            <div class="tech-icon"></div>
+            <div class="tech-name">CSS3</div>
+          </div>
+
+          <!-- Git -->
+          <div class="tech-item">
+            <div class="tech-icon"></div>
+            <div class="tech-name">Git</div>
+          </div>
         </div>
       </div>
     </section>
