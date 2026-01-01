@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <title>Harold Durant • Software Engineer</title>
@@ -7,6 +7,7 @@
   <meta name="description" content="Harold Durant’s software engineering portfolio showcasing AI, full‑stack, and UX projects." />
   <link rel="icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 
   <!-- Global Styles  -->
   <link rel="preload" as="image" href="images/homepage-selfie.jpg">
@@ -22,11 +23,7 @@
   <meta property="og:description" content="Explore AI experiments, production apps, and more.">
   <meta property="og:image" content="/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Favicon & Manifest -->
-  <link rel="manifest" href="/site.webmanifest">
 </head>
-
 <body>
   <!-- HEADER -->
   <header role="banner">
@@ -37,7 +34,7 @@
       </div>
       <nav aria-label="Main site navigation">
         <ul>
-          <li><a href="/pages/projects/index.html">Projects</a></li>
+          <li><a href="pages/projects/index.html">Projects</a></li>
           <li><a href="https://github.com/ROIEngineer" rel="noopener noreferrer" target="_blank">GitHub</a></li>
           <li><a href="pages/contact/index.html">Contact</a></li>
         </ul>
@@ -79,43 +76,43 @@
         <div class="tech-stack">
 	  <!-- React -->
           <div class="tech-item">
-            <div class="tech-icon">⚛️</div>
+            <div class="tech-icon" role="image" aria-label="React">⚛️</div>
             <div class="tech-name">React</div>
           </div>
 
 	  <!-- Python -->
           <div class="tech-item">
-            <div class="tech-icon"></div>
+            <div class="tech-icon" role="image" aria-label="Python"></div>
 	    <div class="tech-name">Python</div>
 	  </div>
 
           <!-- JavaScript -->
           <div class="tech-item">
-            <div class="tech-icon"></div>
+            <div class="tech-icon" role="image" aria-label="JavaScript"></div>
             <div class="tech-name">JavaScript</div>
           </div>
 
           <!-- Node.js -->
           <div class="tech-item">
-            <div class="tech-icon"></div>
+            <div class="tech-icon" role="image" aria-label="Node.js"></div>
             <div class="tech-name">Node.js</div>
           </div>
 
           <!-- HTML5 -->
           <div class="tech-item">
-            <div class="tech-icon"></div>
+            <div class="tech-icon" role="image" aria-label="HTML5"></div>
             <div class="tech-name">HTML5</div>
           </div>
 
           <!-- CSS3 -->
           <div class="tech-item">
-            <div class="tech-icon"></div>
+            <div class="tech-icon" role="image" aria-label="CSS3"></div>
             <div class="tech-name">CSS3</div>
           </div>
 
           <!-- Git -->
           <div class="tech-item">
-            <div class="tech-icon"></div>
+            <div class="tech-icon" role="image" aria-label="Git"></div>
             <div class="tech-name">Git</div>
           </div>
         </div>
@@ -131,7 +128,7 @@
         <div class="section-text">
           <h2 class="section-title">Portfolio Website</h2>
           <p class="section-copy">My portfolio is built for speed and clarity, letting recruiters filter and explore my AI, full-stack, and UX projects instantly via live demos and write-ups. It highlights my production-ready skills and makes it easy to see what I can build and how we might collaborate.</p>
-          <a href="/pages/portfolio-web/index.html" class="learn-more">Learn More</a>
+          <a href="pages/portfolio-web/index.html" class="learn-more">Learn More</a>
         </div>
       </div>
     </section>
@@ -142,7 +139,7 @@
         <div class="section-text">
           <h2 class="section-title">Pantry Pal</h2>
           <p class="section-copy">Pantry Pal turns your pantry into a smart kitchen assistant, recommending recipes based on what you already have with 85% on-device AI accuracy. By scanning barcodes and syncing in real time, it keeps your inventory current, cuts food waste, and saves you money.</p>
-          <a href="./pages/pantry-pal/index.html" target="_blank" rel="noopener noreferrer" class="learn-more">Learn More</a>
+          <a href="pages/pantry-pal/index.html" target="_blank" rel="noopener noreferrer" class="learn-more">Learn More</a>
         </div>
         <div class="section-image-container">
           <img src="images/pantrypal-logo.png" alt="Pantry Pal Logo" class="section-image" loading="lazy">
@@ -159,14 +156,14 @@
         <div class="section-text">
           <h2 class="section-title">Fairshare</h2>
           <p class="section-copy">FairShare Ride is a driver-first ride-hailing platform that boosts earnings by 30% through transparent pricing, offers sub-second real-time tracking for smoother pickups, and secures payouts to protect drivers—empowering them to maximize income and deliver reliable service.</p>
-          <a href="/pages/fairshare/index.html" class="learn-more">Learn More</a>
+          <a href="pages/fairshare/index.html" class="learn-more">Learn More</a>
         </div>
       </div>
     </section>
   </main>
 
   <!--  FOOTER  -->
-  <footer class="site-footer columns" role="contentinfo" aria-label="Site footer">
+  <footer class="site-footer columns" aria-label="Site footer">
     <div class="container footer-grid">
       <div class="col brand">
         <div class="logo">Harold Durant</div>
