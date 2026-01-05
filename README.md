@@ -23,7 +23,7 @@ A modern, responsive portfolio website showcasing my software engineering projec
 
 ## 🚀 Live Demo
 
-[Try the live demo](https://vercel.com/harold-durants-projects/portfolio-web/J92kBWSULG2H7Jfrj4V1nihRBJX7)
+[Try the live demo](https://portfolio-web-six-ashen.vercel.app/)
 
 ## 📁 Project Structure
 
@@ -119,7 +119,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 - **Name**: Harold Durant
 - **GitHub**: [@ROIEngineer](https://github.com/ROIEngineer)
-- **Portfolio**: [My Website](https://vercel.com/harold-durants-projects/portfolio-web/J92kBWSULG2H7Jfrj4V1nihRBJX7)
+- **Portfolio**: [My Website](https://portfolio-web-six-ashen.vercel.app/)
 
 ## 🙏 Acknowledgements
 
