@@ -1,9 +1,9 @@
-@import "./css/base.css";
-@import "./css/header.css";
-@import "./css/hero.css";
-@import "./css/footer.css";
-@import "./css/video.css";
-@import "./css/tech.css";
+@import "./css-modules/base.css";
+@import "./css-modules/header.css";
+@import "./css-modules/hero.css";
+@import "./css-modules/footer.css";
+@import "./css-modules/video.css";
+@import "./css-modules/tech.css";
 
 
 /* GLOBAL */
