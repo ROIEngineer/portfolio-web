@@ -4,8 +4,15 @@ header {
   background: linear-gradient(to right, #f8f9fa, #fff); 
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   font-size: 1.2rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .header.container {
