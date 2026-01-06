@@ -5,15 +5,6 @@
 @import "./css-modules/video.css";
 @import "./css-modules/tech.css";
 
-
-/* GLOBAL */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /*SHARED CLASSES*/
 .section-set {
   padding: 50px 0 100px;
