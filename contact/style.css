@@ -1,0 +1,112 @@
+@import "../css-modules/base.css";
+@import "../css-modules/header.css";
+
+* { outline: 1px solid darkgoldenrod;}
+#contact-section {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+}
+
+.contact-form { padding: 3rem; }
+
+.contact-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1100px;
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.contact-banner {
+    margin-bottom: 2rem;
+}
+
+/* FORM */
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+}
+
+/* INPUT */
+input,
+select,
+textarea {
+  font: inherit;
+  padding: 0.75rem 0;
+  border: none;
+  border-bottom: 1px solid #d1d5db;
+  background: transparent;
+  width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-bottom-color: #2563eb;
+}
+
+/* SPAN */
+form div:nth-child(3),
+form div:nth-child(4),
+form div:nth-child(5),
+form div:nth-child(6),
+form div:nth-child(7),
+button {
+    grid-column: span 2;
+}
+
+/* BUTTON */
+button {
+  margin-top: 1rem;
+  padding: 0.9rem 1.25rem;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Standard syntax for most modern browsers */
+::placeholder, select {
+  color: #999; /* Change the text color */
+  font-style: italic; /* Change the font style */
+  opacity: 1; /* Fix Firefox's default lower opacity */
+}
+
+/* For Chrome, Safari, Opera, and Edge (older versions) */
+::-webkit-input-placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}
+
+/* For Firefox 19+ */
+::-moz-placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}
+
+/* For Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  color: #999;
+  font-style: italic;
+  opacity: 1;
+}
+
+.contact-media {
+  background-image: url("../images/favicon.png");
+  background-size: 30rem auto;
+  background-position: center;
+}
