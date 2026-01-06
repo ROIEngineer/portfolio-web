@@ -1,5 +1,5 @@
 /* HEADER */
-header {
+.site-header {
   color: var(--text-color);
   background: linear-gradient(to right, #f8f9fa, #fff); 
   position: sticky;
@@ -8,22 +8,19 @@ header {
   font-size: 1.2rem;
 }
 
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.header.container {
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 10vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+
 }
 
 /* NAVIGATION LINKS */
-header nav ul {
+.site-header nav ul {
   display: flex;
   list-style: none;
   gap: 1rem;
@@ -31,7 +28,7 @@ header nav ul {
   padding: 0;
 }
 
-header nav a {
+.site-header nav a {
   text-decoration: none;
   color: inherit;
   padding: 0.5rem 1rem;
@@ -41,20 +38,20 @@ header nav a {
 }
 
 /* Hover Effect */
-header nav a:hover {
+.site-header nav a:hover {
   background-color: rgba(0, 0, 0, 0.1);
   transform: translateY(-3px);
   color: #007bff; 
 }
 
 /* Focus Effect - for keyboard navigation */
-header nav a:focus {
+.site-header nav a:focus {
   outline: 2px solid #007bff;
   outline-offset: 4px;
   background-color: rgba(0, 123, 255, 0.1);
 }
 
 /* Active state (when clicked) */
-header nav a:active {
+.site-header nav a:active {
   transform: translateY(0);
 }

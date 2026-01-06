@@ -2,16 +2,19 @@
   color: var(--text-color);
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   padding: 4rem 1rem;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
 
-.hero.container {
+.hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  padding: 1.25rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* TEXT CONTENT */

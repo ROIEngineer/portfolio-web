@@ -1,35 +1,125 @@
+/* =========================
+   GLOBAL RESET & VARIABLES
+   ========================= */
 @import "../css-modules/base.css";
 @import "../css-modules/header.css";
 
-* { outline: 1px solid darkgoldenrod;}
-#contact-section {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  background: #f3f4f6;
+.site-header { 
+  background: var(--dark-bg); 
+  color: white;
 }
 
-.contact-form { padding: 3rem; }
+body { background: #0f172a; }
 
-.contact-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+/* ========================= MAIN LAYOUT ========================= */
+.site-main {
+  padding: 3rem 1.5rem;
+}
+
+.contact-layout {
   max-width: 1100px;
-  width: 100%;
-  background: white;
-  border-radius: 16px;
-  overflow: hidden;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
 }
 
-.contact-banner {
-    margin-bottom: 2rem;
+/* Desktop layout */
+@media (min-width: 768px) {
+  .contact-layout {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
 }
 
-/* FORM */
-form {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.25rem;
+/* =========================
+   CARD SYSTEM
+   ========================= */
+
+.card {
+  background-color: #ffffff;
+  color: #1f2937;
+  border-radius: 10px;
+  padding: 2.5rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header { margin-bottom: 1rem; }
+
+.card-header h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  color: #0f172a;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: 2rem;
+}
+
+/* =========================
+   ABOUT SECTION
+   ========================= */
+
+.media-block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--button-color, #3b82f6);
+}
+
+.about-card p {
+  margin-bottom: 1rem;
+  max-width: 65ch;
+}
+
+/* =========================
+   RESUME ACTIONS
+   ========================= */
+
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.65rem 1.25rem;
+  font-weight: 600;
+  background-color: var(--button-color, #3b82f6);
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.25s ease;
+}
+
+.btn:hover {
+  background-color: #2563eb;
+}
+
+/* =========================
+   CONTACT FORM
+   ========================= */
+
+.contact-form p {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
 }
 
 /* INPUT */
@@ -51,30 +141,29 @@ textarea:focus {
   border-bottom-color: #2563eb;
 }
 
-/* SPAN */
-form div:nth-child(3),
-form div:nth-child(4),
-form div:nth-child(5),
-form div:nth-child(6),
-form div:nth-child(7),
-button {
-    grid-column: span 2;
+textarea {
+  min-height: 130px;
+  resize: vertical;
 }
 
 /* BUTTON */
+.button {
+  display: flex;
+  justify-content: flex-end;
+}
+
 button {
-  margin-top: 1rem;
-  padding: 0.9rem 1.25rem;
-  border: none;
-  border-radius: 10px;
-  background: #2563eb;
-  color: white;
+  padding: 0.65rem 1.5rem;
   font-weight: 600;
+  background-color: var(--button-color, #3b82f6);
+  color: white;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
 
 button:hover {
-  background: #1d4ed8;
+  background-color: #2563eb;
 }
 
 /* Standard syntax for most modern browsers */
@@ -105,8 +194,35 @@ button:hover {
   opacity: 1;
 }
 
-.contact-media {
-  background-image: url("../images/favicon.png");
-  background-size: 30rem auto;
-  background-position: center;
+
+/* =========================
+   MOBILE ADJUSTMENTS
+   ========================= */
+
+@media (max-width: 480px) {
+  .card {
+    padding: 1.75rem;
+  }
+
+  .card-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-photo {
+    width: 110px;
+    height: 110px;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .btn,
+  button {
+    width: 100%;
+  }
+
+  .button {
+    justify-content: center;
+  }
 }
