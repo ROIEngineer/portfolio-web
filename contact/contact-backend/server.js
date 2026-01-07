@@ -14,6 +14,8 @@ app.use(express.json());
 
 app.post("/api/contact", async (req, res) => {
   // Setup contact endpoint
+  const {first_name, last_name, user_email, user_subject, user_message } = req.body;
+
 });
 
 app.get("/", (req, res) => {
