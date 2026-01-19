@@ -1,6 +1,6 @@
 import express from "express"; // server framework
 import cors from "cors"; // allows frontend to talk to backend
-import dotenv from "dotenv"; // environment variables
+import dotenv from "dotenv"; // keeps environment variables credentials secure
 
 
 dotenv.config();
