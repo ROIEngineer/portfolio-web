@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>Harold Durant • Contact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 
     <!-- Meta -->
     <meta name="description" content="Harold Durant’s software engineering portfolio showcasing AI, full-stack, and UX projects." />
@@ -89,7 +90,7 @@
                     </header>
 			
 		    <div class="card-body">
-                        <form action="#" method="POST" class="contact-form">
+                        <form id="contact-form" class="contact-form">
 
                             <!-- First name -->
                             <p>
@@ -129,6 +130,7 @@
                             <!-- Submit Button -->
 			    <p class="button">
                                 <button type="submit">Get in touch</button>
+				<p id="form-status" aria-live="polite"></p>
 			    </p>
 
                         </form>

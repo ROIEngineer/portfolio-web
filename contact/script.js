@@ -1,0 +1,37 @@
+const form = document.getElementById("contact-form");  // Link to HTML form
+const status = document.getElementById("form-status"); // Link to status message
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  status.textContent = "Sending message";
+
+  const formData = {
+    firstName: form.first_name.value,
+    lastName: form.last_name.value,
+    email: form.user_email.value,
+    subject: form.user_subject.value,
+    message: form.user_message.value,
+  };
+
+  try {
+    const response = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData), 
+    });
+
+    const data = await response.json();
+
+    if (response.ok) {
+      status.textContent = "Message sent successfully!";
+      form.reset();
+    } else {
+      status.textContent = data.error || "Something went wrong.";
+    }
+  } catch (error) {
+    status.textContent = "Server error. Please try again later.";
+  }
+});
