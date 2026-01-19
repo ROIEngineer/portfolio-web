@@ -2,10 +2,13 @@ const form = document.getElementById("contact-form");  // Link to HTML form
 const status = document.getElementById("form-status"); // Link to status message
 
 form.addEventListener("submit", async (e) => {
+  // Stop page from refreshing
   e.preventDefault();
 
+  // Declare the status
   status.textContent = "Sending message";
 
+  // Destruct values from submitted form
   const formData = {
     firstName: form.first_name.value,
     lastName: form.last_name.value,
@@ -20,7 +23,7 @@ form.addEventListener("submit", async (e) => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData), 
+      body: JSON.stringify(formData),
     });
 
     const data = await response.json();
