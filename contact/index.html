@@ -95,26 +95,26 @@
                             <!-- First name -->
                             <p>
                                 <label for="fname"></label>
-                                <input type="text" id="fname" name="first_name" placeholder="First name" required>
+                                <input type="text" id="fname" name="first_name" placeholder="First name" maxLength="20" required>
                             </p>
 
                             <!-- Last name -->
                             <p>
                                 <label for="lname"></label>
-                                <input type="text" id="lname" name="last_name" placeholder="Last name" required>
+                                <input type="text" id="lname" name="last_name" placeholder="Last name" maxLength="20" required>
                             </p>
 
                             <!-- Email -->
                             <p>
                                 <label for="email"></label>
-                                <input type="email" id="email" name="user_email" placeholder="Email" autocomplete="email" spellcheck="false" required>
+                                <input type="email" id="email" name="user_email" placeholder="Email" autocomplete="email" spellcheck="false" maxLength="254" required>
                             </p>
 
                             <!-- Subject -->
                             <p>
                                 <label for="subject"></label>
                                 <select name="user_subject" id="subject">
-                                    <option value="">Subject</option>
+                                    <option value="">-- Choose a Subject --</option>
                                     <option value="Project Inquiry">Project Inquiry</option>
                                     <option value="Job Opportunity">Job Opportunity</option>
                                     <option value="General Question">General Question</option>
@@ -124,7 +124,7 @@
                             <!-- Message -->
                             <p>
                                 <label for="msg"></label>
-                                <textarea name="user_message" id="msg" rows="5" cols="33" placeholder="Type your detailed message here..."></textarea>
+                                <textarea name="user_message" id="msg" rows="5" cols="33" placeholder="Type your detailed message here..." maxLength="1000" required></textarea>
                             </p>
 
                             <!-- Submit Button -->

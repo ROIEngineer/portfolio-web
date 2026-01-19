@@ -10,19 +10,17 @@ form.addEventListener("submit", async (e) => {
 
   // Destruct values from submitted form
   const formData = {
-    firstName: form.first_name.value,
-    lastName: form.last_name.value,
-    email: form.user_email.value,
-    subject: form.user_subject.value,
-    message: form.user_message.value,
+    firstName: form.first_name.value.trim(),
+    lastName: form.last_name.value.trim(),
+    email: form.user_email.value.trim(),
+    subject: form.user_subject.value.trim(),
+    message: form.user_message.value.trim(),
   };
 
   try {
     const response = await fetch("http://localhost:5000/api/contact", {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
+      headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
 
@@ -32,7 +30,7 @@ form.addEventListener("submit", async (e) => {
       status.textContent = "Message sent successfully!";
       form.reset();
     } else {
-      status.textContent = data.error || "Something went wrong.";
+      status.textContent = data.error || "Please check your information and try again.";
     }
   } catch (error) {
     status.textContent = "Server error. Please try again later.";

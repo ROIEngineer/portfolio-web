@@ -2,6 +2,7 @@ import express from "express"; // server framework
 import cors from "cors"; // allows frontend to talk to backend
 import dotenv from "dotenv"; // keeps environment variables credentials secure
 import nodemailer from "nodemailer"; // sends emails
+import validator from "validator"; // validates emails
 
 dotenv.config();
 
@@ -9,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// handles sending mail
+// Sends mail
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
@@ -17,7 +18,6 @@ const transporter = nodemailer.createTransport({
     pass: process.env.EMAIL_PASS,
   },
 });
-
 
 // POST CONTACT
 app.post("/api/contact", async (req, res) => {
@@ -28,12 +28,45 @@ app.post("/api/contact", async (req, res) => {
     return res.status(400).json({ error: "Missing required fields." });
   }
 
+  // HEAVY email validation using validator.js
+  if (!email || !validator.isEmail(email)) {
+    return res.status(400).json({
+      error: "Please provide a valid email address"
+    });
+  }
+
+  // Additional email checks with validator.js
+  if (!validator.isLength(email, { max: 1000 })) {
+    return res.status(400).json({
+      error: "Email address is too long"
+    });
+  }
+
+  // Block disposable emails
+  if (validator.isDisposableEmail(email)) {
+    return res.status(400).json({
+      error: "Disposable email addresses are not allowed"
+    });
+  }
+
+  // Message validation (just length)
+  if (!message || message.length > 1000) {
+    return res.status(400).json({
+      error: "Message must be less than 1000 characters"
+    });
+  }
+
+  // Prevents obvious XSS - basic sanitization
+  const sanitizedMessage = validator.escape(message);
+  const sanitizedFirstName = validator.escape(firstName);
+  const sanitizedLastName = validator.escape(lastName);
+
   try {
     await transporter.sendMail({
-      from: `"${firstName} ${lastName}" <${email}>`,
+      from: `"${sanitizedFirstName} ${sanitizedLastName}" <${email}>`,
       to: process.env.EMAIL_USER,
       subject: subject || "New Portfolio Contact",
-      text: `Name: ${firstName} ${lastName} Email: ${email} Subject: ${subject} Message: ${message}`,});
+      text: `Name: ${sanitizedFirstName} ${sanitizedLastName} Email: ${email} Subject: ${subject} Message: ${sanitizedMessage}`,});
 
     res.status(200).json({ success: true });
   } catch (error) {
@@ -42,16 +75,7 @@ app.post("/api/contact", async (req, res) => {
   }
 });
 
-// GET CONTACT
-app.get("/", (req, res) => {
-  res.json({
-    message: "Contact API is running",
-    environment: process.env.NODE_ENV,
-    port: process.env.PORT
-  });
-});
-
 const PORT = process.env.PORT || 5000;
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
-app.listen(PORT, () => console.log(`Contact API running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
