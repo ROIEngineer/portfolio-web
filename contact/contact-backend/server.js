@@ -1,16 +1,23 @@
 import express from "express"; // server framework
 import cors from "cors"; // allows frontend to talk to backend
 import dotenv from "dotenv"; // keeps environment variables credentials secure
-
+import nodemailer from "nodemailer"; // sends emails
 
 dotenv.config();
-
-console.log("Environment:", process.env.NODE_ENV);
-console.log("Port:", process.env.PORT);
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// handles sending mail
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
+  },
+});
+
 
 // POST CONTACT
 app.post("/api/contact", async (req, res) => {
@@ -21,15 +28,18 @@ app.post("/api/contact", async (req, res) => {
     return res.status(400).json({ error: "Missing required fields." });
   }
 
-  console.log("New contact submission:", {
-    firstName,
-    lastName,
-    email,
-    subject,
-    message,
-  });
+  try {
+    await transporter.sendMail({
+      from: `"${firstName} ${lastName}" <${email}>`,
+      to: process.env.EMAIL_USER,
+      subject: subject || "New Portfolio Contact",
+      text: `Name: ${firstName} ${lastName} Email: ${email} Subject: ${subject} Message: ${message}`,});
 
-  res.status(200).json({ success: true });
+    res.status(200).json({ success: true });
+  } catch (error) {
+    console.error("Email error:", error);
+    res.status(500).json({ error: "Failed to send email" });
+  }
 });
 
 // GET CONTACT
