@@ -166,6 +166,9 @@ button:hover {
   background-color: #2563eb;
 }
 
+/* Honeypot Styling */
+.honeypot { display: none; }
+
 /* Standard syntax for most modern browsers */
 ::placeholder, select {
   color: #999; /* Change the text color */

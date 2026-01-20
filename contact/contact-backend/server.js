@@ -3,12 +3,20 @@ import cors from "cors"; // allows frontend to talk to backend
 import dotenv from "dotenv"; // keeps environment variables credentials secure
 import nodemailer from "nodemailer"; // sends emails
 import validator from "validator"; // validates emails
+import rateLimit from "express-rate-limit";
 
 dotenv.config();
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+// Rate limiter
+const contactLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 5, // max 5 requests per IP
+  message: { error: "Too many requests. Please try again later." },
+});
 
 // Sends mail
 const transporter = nodemailer.createTransport({
@@ -20,9 +28,13 @@ const transporter = nodemailer.createTransport({
 });
 
 // POST CONTACT
-app.post("/api/contact", async (req, res) => {
+app.post("/api/contact", contactLimiter, async (req, res) => {
   // Setup contact endpoint
-  const {firstName, lastName, email, subject, message } = req.body;
+  const {firstName, lastName, email, subject, message, company } = req.body;
+
+  if (company) {
+    return res.status(200).json({ success: true });
+  }
 
   if (!firstName || !lastName || !email || !message) {
     return res.status(400).json({ error: "Missing required fields." });
