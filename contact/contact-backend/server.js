@@ -36,16 +36,9 @@ app.post("/api/contact", async (req, res) => {
   }
 
   // Additional email checks with validator.js
-  if (!validator.isLength(email, { max: 1000 })) {
+  if (!validator.isLength(email, { max: 254 })) {
     return res.status(400).json({
       error: "Email address is too long"
-    });
-  }
-
-  // Block disposable emails
-  if (validator.isDisposableEmail(email)) {
-    return res.status(400).json({
-      error: "Disposable email addresses are not allowed"
     });
   }
 
