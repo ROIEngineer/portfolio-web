@@ -15,6 +15,7 @@ form.addEventListener("submit", async (e) => {
     email: form.user_email.value.trim(),
     subject: form.user_subject.value.trim(),
     message: form.user_message.value.trim(),
+    company: form.company.value.trim(), // honeypot
   };
 
   try {
