@@ -19,7 +19,7 @@ form.addEventListener("submit", async (e) => {
   };
 
   try {
-    const response = await fetch("https://portfolio-backend-b68z.onrender.com/api/contact", {
+    const response = await fetch("https://portfolio-backend-resend.onrender.com/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
@@ -37,3 +37,5 @@ form.addEventListener("submit", async (e) => {
     status.textContent = "Server error. Please try again later.";
   }
 });
+
+// "https://portfolio-backend-b68z.onrender.com/api/contact"
