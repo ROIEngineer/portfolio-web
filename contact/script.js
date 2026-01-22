@@ -38,4 +38,3 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-// "https://portfolio-backend-b68z.onrender.com/api/contact"
